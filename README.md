@@ -4,9 +4,9 @@
 
 A Web Crawler is a program that navigates the Web and finds new or updated pages for indexing. The Crawler starts with seed websites or a wide range of popular URLs (also known as the frontier) and searches in depth and width for hyperlinks to extract.
 
-A Web Crawler must be kind and robust. Kindness for a Crawler means that it respects the rules set by the robots.txt and avoids visiting a website too often. Robustness refers to the ability to avoid spider traps and other malicious behavior. Other good attributes for a Web Crawler is distributivity amongst multiple distributed machines, expandability, continuity and ability to prioritize based on page quality.
+A Web Crawler must be kind and robust. Kindness for a Crawler means that it respects the rules set by the robots.txt and avoids visiting a website too often. Robustness refers to the ability to avoid spider traps and other malicious behavior. Other good attributes for a Web Crawler is distributive amongst multiple distributed machines, expandability, continuity and ability to prioritize based on page quality.
 
-Here a very simple web crawler is implemnetd to demostrate how it works.
+Here a very simple web crawler is implemented to demostrate how it works.
 simple-web-crawler is an open source web crawler and scraper for Java which provides a simple interface for crawling the Web. This is special design to crawl in the given domain due to restriction it will visit the entire pages on given domain and list down all the resources, imports and links. Depth of the crawling is configurable using input parameter.
 
 ## Table of content
