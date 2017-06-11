@@ -7,7 +7,7 @@ A Web Crawler is a program that navigates the Web and finds new or updated pages
 A Web Crawler must be kind and robust. Kindness for a Crawler means that it respects the rules set by the robots.txt and avoids visiting a website too often. Robustness refers to the ability to avoid spider traps and other malicious behavior. Other good attributes for a Web Crawler is distributive amongst multiple distributed machines, expandability, continuity and ability to prioritize based on page quality.
 
 Here a very simple web crawler is implemented to demostrate how it works.
-simple-web-crawler is an open source web crawler and scraper for Java which provides a simple interface for crawling the Web. This is special design to crawl in the given domain due to restriction it will visit the entire pages on given domain and list down all the resources, imports and links. Depth of the crawling is configurable using input parameter.
+simple-web-crawler is an open source web crawler and scraper for Java which provides a simple interface for crawling the Web. This is specially design to crawl in the given domain due to restriction it will visit the entire pages on given domain and list down all the resources, imports and links. Depth of the crawling is configurable using input parameter.
 
 ## Table of content
 
@@ -21,17 +21,17 @@ Import as a Maven project in Eclipse.
 
 ![import](https://user-images.githubusercontent.com/20490848/27004584-d0973c56-4e28-11e7-8b15-51ba5d43f471.png)
 
-Select checkout Maven Project from SCM
+Select Checkout Maven Project from SCM
 
 ![wizard](https://user-images.githubusercontent.com/20490848/27004595-207a68f6-4e29-11e7-8191-c1cfd1fe3e7a.png)
 
-Click on next button
+Click on Next button
 
 Copy and paste https://github.com/krishnabitmca/simple-web-crawler.git this in git URL
 
 ![repository](https://user-images.githubusercontent.com/20490848/27004600-42ec4f76-4e29-11e7-9162-266b4e614578.png)
 
-click on finish
+click on Finish
 
 ![imported](https://user-images.githubusercontent.com/20490848/27004621-a1e28464-4e29-11e7-832c-ac192061f5ad.png)
 
@@ -104,6 +104,7 @@ All the dependencies and input parameters are provided through pom.xml. Followin
 *  Its not multi threaded.
 *  Its not SSL enbled.
 *  Politness feature is not available.
+*  Unit test cases.
 
 ## License
 Copyright (c) 2017 Krishna Singh
