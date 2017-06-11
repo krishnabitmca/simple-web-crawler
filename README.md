@@ -69,16 +69,17 @@ $ mvn test
 
 *  Check if you have already crawled the URLs and/or if you have seen the same content before.
 
-*  If not add it to the index.
+    *  If not add it to the index.
 
 *  For each extracted URL.
+   *   Confirm that it agrees to be checked (robots.txt, crawling frequency).
 
 ### Basic building block
 
 ![design](https://user-images.githubusercontent.com/20490848/27004775-03b68b42-4e2d-11e7-8f17-b4bdc6389cca.png)
 
 ### Libraries used 
-This web crawler is using jsoup. It is a Java library for working with real-world HTML. It provides a very convenient API for extracting and manipulating data, using the best of DOM, CSS, and jquery-like methods.
+This web crawler is using jsoup libraries for HTML parsing. It is a Java library for working with real-world HTML. It provides a very convenient API for extracting and manipulating data, using the best of DOM, CSS, and jquery-like methods.
 
 
 jsoup implements the WHATWG HTML5 specification, and parses HTML to the same DOM as modern browsers do.
