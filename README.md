@@ -94,9 +94,9 @@ For further reading please got through https://jsoup.org/.
 
 ### Configuration 
 
-All the dependencies and input parameters are provided through pom.xml. Following configuration takes the domain name and depth for crawler to search in domain. Make neccessary changes if you want to changes domain or depth.
+All the dependencies and input parameters are provided through pom.xml. Following configuration takes the domain name and depth for crawler to search in domain. Make neccessary changes if you want to changes domain, depth and restric the crawling in given domain using bollean flag.
 
-![config](https://user-images.githubusercontent.com/20490848/27004930-69d09956-4e30-11e7-98d3-13a7aa4025a5.png)
+![config](https://user-images.githubusercontent.com/20490848/27019764-de6142b0-4f58-11e7-8c38-22eaafcd154e.png)
 
 ## Limitation
 
