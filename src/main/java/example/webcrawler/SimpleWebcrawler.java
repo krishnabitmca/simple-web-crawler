@@ -20,6 +20,7 @@ public class SimpleWebcrawler {
 	private static int MAX_DEPTH = 2;
 	private List<String> links;
 	private static String DOMAIN;
+	private static boolean searchOtherDomain;
 
 	public SimpleWebcrawler() {
 		links = new ArrayList<String>();
@@ -34,7 +35,7 @@ public class SimpleWebcrawler {
 	 *            depth size for crawling
 	 */
 	public void getPageLinks(String URL, int depth) {
-		if ((!links.contains(URL) && (depth < MAX_DEPTH) && URL.startsWith(DOMAIN))) {
+		if ((!links.contains(URL) && (depth <= MAX_DEPTH) && searchToGivenDomain(URL))) {
 
 			try {
 				Extracter.printWeb(URL);
@@ -53,10 +54,25 @@ public class SimpleWebcrawler {
 		}
 	}
 
+	private boolean searchToGivenDomain(String URL) {
+		if (searchOtherDomain) {
+			if (URL.startsWith(DOMAIN)) {
+				return true;
+			} else {
+				return false;
+			}
+		} else {
+			return true;
+		}
+
+	}
+
 	public static void main(String[] args) {
-		isTrue(args.length == 2, "usage: supply url to fetch");
+		isTrue(args.length == 3, "usage: supply url to fetch");
 		DOMAIN = args[0];
-		new SimpleWebcrawler().getPageLinks(DOMAIN, Integer.parseInt(args[1]));
+		MAX_DEPTH = Integer.parseInt(args[1]);
+		searchOtherDomain = Boolean.parseBoolean(args[2]);
+		new SimpleWebcrawler().getPageLinks(DOMAIN, 1);
 	}
 
 	/**

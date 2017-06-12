@@ -39,7 +39,8 @@
           <mainClass>example.webcrawler.SimpleWebcrawler</mainClass>
           <arguments>
            <argument>http://wiprodigital.com</argument>
-            <argument>1</argument>
+            <argument>2</argument>
+            <argument>true</argument>
           </arguments>
          </configuration>
         </execution>
